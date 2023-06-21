@@ -21,7 +21,6 @@ basic.forever(function () {
         let rightSensor = (whiteLine ^ pins.digitalReadPin(pinRight)) == 0 ? true : false
 
         if (!rightSensor && !leftSensor && direction == "r") {
-            basic.showIcon(IconNames.Duck, 0)
             leftSpeed = -105
             rightSpeed = -105
             PCAmotor.MotorRun(motor1, leftSpeed)
@@ -35,7 +34,6 @@ basic.forever(function () {
         }
 
         if (!rightSensor && !leftSensor && direction == "l") {
-            basic.showIcon(IconNames.Duck, 0)
             leftSpeed = 105
             rightSpeed = 115
             basic.pause(100)
@@ -50,7 +48,6 @@ basic.forever(function () {
         }
 
         if (!rightSensor && !leftSensor && direction == "s") {
-            basic.showIcon(IconNames.Duck, 0)
             rightSpeed = 115
             leftSpeed = -115
             PCAmotor.MotorRun(motor1, -leftSpeed)
@@ -95,19 +92,10 @@ basic.forever(function () {
 // radio.setGroup(69)
 // input.onButtonPressed(Button.A, function () {
 //     radio.sendString("l")
-//
-//     basic.showArrow(ArrowNames.West)
-//
 // })
 // input.onButtonPressed(Button.B, function () {
 //     radio.sendString("r")
-//
-//     basic.showArrow(ArrowNames.East)
-//
 // })
 // input.onButtonPressed(Button.AB, function () {
 //     radio.sendString("s")
-//
-//     basic.showArrow(ArrowNames.North)
-//
 // })
