@@ -87,15 +87,15 @@ basic.forever(function () {
     })
 })
 
-//OVLADAČ
+/*OVLADAČ
 
-// radio.setGroup(69)
-// input.onButtonPressed(Button.A, function () {
-//     radio.sendString("l")
-// })
-// input.onButtonPressed(Button.B, function () {
-//     radio.sendString("r")
-// })
-// input.onButtonPressed(Button.AB, function () {
-//     radio.sendString("s")
-// })
+ radio.setGroup(69)
+ input.onButtonPressed(Button.A, function () {
+     radio.sendString("l")
+    })
+ input.onButtonPressed(Button.B, function () {
+     radio.sendString("r")
+    })
+input.onButtonPressed(Button.AB, function () {
+     radio.sendString("s")
+    }) */
